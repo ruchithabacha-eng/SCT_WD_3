@@ -1,0 +1,114 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background:#87CEEB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Main Container */
+.container{
+    width:600px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* Paragraph */
+p{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Hide Elements */
+.hide{
+    display:none;
+}
+
+/* Buttons */
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* Start Button */
+#start-btn{
+    display:block;
+    margin:20px auto;
+}
+
+/* Next Button */
+#next-btn{
+    margin-top:20px;
+}
+
+/* Options */
+#options{
+    margin-top:15px;
+}
+
+.option{
+    display:block;
+    background:#f4f4f4;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#dbeafe;
+}
+
+/* Fill Input */
+#fill-answer{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Responsive */
+@media(max-width:650px){
+
+.container{
+    width:95%;
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Quiz Box -->
+    <div class="container">
+
+        <h1>Quiz Game</h1>
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <p>Test your knowledge with different types of questions.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-screen" class="hide">
+
+            <h2 id="question"></h2>
+
+            <!-- Options will appear here -->
+            <div id="options"></div>
+
+            <!-- Fill in the blank input -->
+            <input
+                type="text"
+                id="fill-answer"
+                class="hide"
+                placeholder="Type your answer here..."
+            >
+
+            <br><br>
+
+            <button id="next-btn">Next</button>
+
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-screen" class="hide">
+
+            <h2>Quiz Completed 🎉</h2>
+
+            <h3 id="score"></h3>
+
+            <button onclick="location.reload()">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
